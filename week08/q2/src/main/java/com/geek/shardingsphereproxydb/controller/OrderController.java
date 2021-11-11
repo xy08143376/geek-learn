@@ -28,8 +28,43 @@ public class OrderController {
         return orderMapper.selectById(orderId);
     }
 
-    @PostMapping("/order/")
-    public TOrder insert() {
+    @PostMapping("/order/success")
+    public String insert() {
+        TOrder order = buildOrder();
+        Integer execute = transactionTemplate.execute((status) -> {
+            int row = orderMapper.insert(order);
+            return row;
+        });
+        if (execute > 0) {
+            return "155插入成功：" + order.toString();
+        } else {
+            return "155插入失败：" + order.toString();
+        }
+
+    }
+
+    @PostMapping("/order/fail/")
+    public String insertFail() {
+        TOrder order = buildOrder();
+        Boolean execute = transactionTemplate.execute((status) -> {
+            orderMapper.insert(order);
+            System.out.println(order.toString());
+            // 故意抛出异常
+            int a = 10 / 0;
+            return false;
+        });
+        String ret = "";
+        if (!execute) {
+            ret = "155插入失败: " + order.toString();
+        } else {
+            ret = "155插入成功：" + order.toString();
+        }
+
+        return ret;
+
+    }
+
+    private TOrder buildOrder() {
         TOrder order = new TOrder();
         Random random = new Random();
         order.setUserId((long) random.nextInt(1000) + 1);
@@ -40,11 +75,8 @@ public class OrderController {
         order.setOrderTotalPrice(BigDecimal.valueOf(price * num));
         order.setProdId((long) random.nextInt(10000) + 1);
         order.setOrderStatus(random.nextInt(4));
-        transactionTemplate.execute((status) -> orderMapper.insert(order));
-        System.out.println(order.getOrderId() % 8);
         return order;
-
-
     }
+
 
 }
