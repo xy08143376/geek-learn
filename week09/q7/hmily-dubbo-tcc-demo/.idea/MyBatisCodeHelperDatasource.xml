@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="database" value="MySql" />
+        <option name="javaMapperPackage" value="com.geek.hmilydubbotcc.api.mapper" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/hmily-dubbo-tcc-api/src/main/java" />
+        <option name="javaModelPackage" value="com.geek.hmilydubbotcc.api.entity" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/hmily-dubbo-tcc-api/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="hmily-dubbo-tcc-api" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="hmily-dubbo-tcc-api">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.geek.hmilydubbotcc.api.mapper" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/hmily-dubbo-tcc-api/src/main/java" />
+                  <option name="javaModelPacakge" value="com.geek.hmilydubbotcc.api.entity" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/hmily-dubbo-tcc-api/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/hmily-dubbo-tcc-api/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="removeTablePreName" value="t" />
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="hmily-dubbo:t_account_cny">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="account_id" />
+                  <option name="javaModelName" value="AccountCny" />
+                  <option name="moduleName" value="hmily-dubbo-tcc-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="hmily-dubbo:t_account_dollar">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="account_id" />
+                  <option name="javaModelName" value="AccountDollar" />
+                  <option name="moduleName" value="hmily-dubbo-tcc-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="hmily-dubbo:t_cancel_log">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="CancelLog" />
+                  <option name="moduleName" value="hmily-dubbo-tcc-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="hmily-dubbo:t_confirm_log">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="ConfirmLog" />
+                  <option name="moduleName" value="hmily-dubbo-tcc-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="hmily-dubbo:t_lock_money">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="LockMoney" />
+                  <option name="moduleName" value="hmily-dubbo-tcc-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="hmily-dubbo:t_try_log">
+              <value>
+                <TableGenerateConfig>
+                  <option name="javaModelName" value="TryLog" />
+                  <option name="moduleName" value="hmily-dubbo-tcc-api" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/hmily-dubbo-tcc-api/src/main/resources" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>
