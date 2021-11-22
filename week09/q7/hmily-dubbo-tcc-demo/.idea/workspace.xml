@@ -51,7 +51,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.obroom.plugin.mybatislog.indexNum" value="96" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/hmily-dubbo-tcc-trade/src/main/resources/mapper" />
     <property name="settings.editor.selected.configurable" value="com.ccnode.codegenerator.g.d" />
   </component>
@@ -67,14 +66,23 @@
       <recent name="com.geek.hmilydubbotcc.trade.mapper" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.TradeApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637392490546</updated>
       <workItem from="1637392491776" duration="7092000" />
+      <workItem from="1637541486287" duration="7217000" />
     </task>
     <servers />
   </component>
