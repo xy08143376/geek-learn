@@ -1,7 +1,5 @@
 package com.geek.hmilydubbotcc.api.service;
 
-import com.geek.hmilydubbotcc.api.entity.AccountCny;
-import com.geek.hmilydubbotcc.api.entity.AccountDollar;
 import org.dromara.hmily.annotation.Hmily;
 
 /**
@@ -17,10 +15,10 @@ public interface AccountService {
     boolean checkAccountAmount(int accountId, int accountType, double money);
 
     @Hmily
-    boolean addMoney(int accountId, int accountType, double amount);
+    boolean addMoney(String txId, int accountId, int accountType, double amount);
 
     @Hmily
-    boolean subMoney(int accountId, int accountType, double amount);
+    boolean subMoney(String txId, int accountId, int accountType, double amount);
 
 
 }

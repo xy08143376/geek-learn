@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geek.hmilydubbotcc.account.mapper.CancelLogMapper">
+  <resultMap id="BaseResultMap" type="com.geek.hmilydubbotcc.api.entity.CancelLog">
+    <!--@mbg.generated-->
+    <!--@Table t_cancel_log-->
+    <id column="tx_no" jdbcType="VARCHAR" property="txNo" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    tx_no, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from t_cancel_log
+    where tx_no = #{txNo,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    <!--@mbg.generated-->
+    delete from t_cancel_log
+    where tx_no = #{txNo,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.geek.hmilydubbotcc.api.entity.CancelLog">
+    <!--@mbg.generated-->
+    insert into t_cancel_log (tx_no, create_time)
+    values (#{txNo,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.geek.hmilydubbotcc.api.entity.CancelLog">
+    <!--@mbg.generated-->
+    insert into t_cancel_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="txNo != null and txNo != ''">
+        tx_no,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="txNo != null and txNo != ''">
+        #{txNo,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.geek.hmilydubbotcc.api.entity.CancelLog">
+    <!--@mbg.generated-->
+    update t_cancel_log
+    <set>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where tx_no = #{txNo,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.geek.hmilydubbotcc.api.entity.CancelLog">
+    <!--@mbg.generated-->
+    update t_cancel_log
+    set create_time = #{createTime,jdbcType=TIMESTAMP}
+    where tx_no = #{txNo,jdbcType=VARCHAR}
+  </update>
+</mapper>

@@ -51,15 +51,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hmily-dubbo-tcc-trade/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hmily-dubbo-tcc-account/src/main/resources/mapper" />
     <property name="settings.editor.selected.configurable" value="com.ccnode.codegenerator.g.d" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace-my\geek-work\hmily-dubbo-tcc-demo\hmily-dubbo-tcc-trade\src\main\resources\mapper" />
-      <recent name="E:\workspace-my\geek-work\hmily-dubbo-tcc-demo\hmily-dubbo-tcc-trade\src\main\java\com\geek\hmilydubbotcc\trade\mapper" />
       <recent name="E:\workspace-my\geek-work\hmily-dubbo-tcc-demo\hmily-dubbo-tcc-account\src\main\resources\mapper" />
       <recent name="E:\workspace-my\geek-work\hmily-dubbo-tcc-demo\hmily-dubbo-tcc-account\src\main\java\com\geek\hmilydubbotcc\account\mapper" />
+      <recent name="E:\workspace-my\geek-work\hmily-dubbo-tcc-demo\hmily-dubbo-tcc-trade\src\main\resources\mapper" />
+      <recent name="E:\workspace-my\geek-work\hmily-dubbo-tcc-demo\hmily-dubbo-tcc-trade\src\main\java\com\geek\hmilydubbotcc\trade\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.geek.hmilydubbotcc.api.constant" />
@@ -129,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637392490546</updated>
       <workItem from="1637392491776" duration="7092000" />
-      <workItem from="1637541486287" duration="7217000" />
+      <workItem from="1637541486287" duration="9437000" />
     </task>
     <servers />
   </component>
