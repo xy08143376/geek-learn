@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: redis-pubsub
+
+  redis:
+    host: 127.0.0.1
+    port: 6380
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
