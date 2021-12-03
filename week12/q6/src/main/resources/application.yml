@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: activemq-boot-demo
+#  jms:
+#    pub-sub-domain: true
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    #        true表示使用内置的MQ，false则连接服务器
+    in-memory: false
+    user: admin
+    password: admin
+    pool:
+    #            true 表示使用连接池，false时没发送
+      enabled: true
+      max-connections: 10
