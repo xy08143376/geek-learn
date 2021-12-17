@@ -1,0 +1,34 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: spring-kafka-cluster
+
+  kafka:
+    #        集群信息
+    bootstrap-servers:
+      - localhost:9092
+      - localhost:9001
+      - localhost:9002
+    #      生产者配置
+    producer:
+      #      客户端发送失败重新发送次数
+      retries: 3
+      batch-size: 16384 # 16K
+      buffer-memory: 33554432 # 32M
+      acks: 1
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    #      消费者配置
+    consumer:
+      group-id: testGroup
+      enable-auto-commit: false # 关闭自动提交
+      #      当各分区有以提交的offset时，从提交的offset开始消费，无提交的offset时，从头开始消费
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      #      manual
+      #      手动调用Acknowledge.acknowledge()后立即提交，一般使用这种
+      ack-mode: manual_immediate

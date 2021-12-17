@@ -1,0 +1,6 @@
+gmq:
+  broker:
+    url: http://localhost:8080/
+  consumer:
+    consumerId: consumer1
+    topic: v3.test
