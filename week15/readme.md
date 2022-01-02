@@ -7,15 +7,15 @@ JVM是指java虚拟机，可以理解成一种程序，可以在不同平台上�
 3. java内存结构主要分为：程序计数器、虚拟机栈、本地方法栈、堆内存、元空间等。
    - 堆分为新生代和老年代，默认1:2，新生代分为Eden区和survivor0和survivor1区，默认8:1:1 。
 
-	4. java启动参数分为标准参数和非标准参数，-开头为标准参数，-X开头的为非标准参数，-XX为非稳定参数，可以通过命令查看。
-	4. java常用的命令行工具有：jps、jinfo、jstat、jmap、jcmd、jstack等。
-	4. 图形化界面分析统计有：jConsole、JVisualVM.
-	4. GC的原理有引用计数法和可达性分析法。引用计数法可能造成循环依赖，一般用可达性分析法。
-	4. 常用GC算法有复制算法、标记清除算法、标记整理算法。
-	4. GC主要是收集堆内存的垃圾。
-	4. 常用的GC收集器有：SerialGC、SerialOld、ParNewGC、ParallelGC、ParallelOldGC、CMSGC、G1GC、ZGC
-	4. CMS在初始标记和最终标记会有STW。
-	4. 常用的GC组合有：Serial+SerialOld、ParNew+CMS、Parallel+ParallelOld、G1.
+4. java启动参数分为标准参数和非标准参数，-开头为标准参数，-X开头的为非标准参数，-XX为非稳定参数，可以通过命令查看。
+5. java常用的命令行工具有：jps、jinfo、jstat、jmap、jcmd、jstack等。
+6. 图形化界面分析统计有：jConsole、JVisualVM.
+7. GC的原理有引用计数法和可达性分析法。引用计数法可能造成循环依赖，一般用可达性分析法。
+8. 常用GC算法有复制算法、标记清除算法、标记整理算法。
+9. GC主要是收集堆内存的垃圾。
+10. 常用的GC收集器有：SerialGC、SerialOld、ParNewGC、ParallelGC、ParallelOldGC、CMSGC、G1GC、ZGC
+11. CMS在初始标记和最终标记会有STW。
+12. 常用的GC组合有：Serial+SerialOld、ParNew+CMS、Parallel+ParallelOld、G1.
 
 ![JVM](https://myblog-imgs.oss-cn-hangzhou.aliyuncs.com/blog/imgs/JVM%E8%84%91%E5%9B%BE.png)
 
